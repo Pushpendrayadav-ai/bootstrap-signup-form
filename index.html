@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container" style="max-width: 500px;">
+    <h2 class="mb-4">Sign Up Form</h2>
+    <form>
+        <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+        </div>
+
+        <div class="mb-3">
+            <label for="emailInput" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="emailInput">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="countrySelect" class="form-label">Country</label>
+            <select class="form-select" id="countrySelect">
+                <option selected>Choose...</option>
+                <option value="1">United States</option>
+                <option value="2">Canada</option>
+                <option value="3">United Kingdom</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="profilePhoto" class="form-label">Profile Photo</label>
+            <input class="form-control" type="file" id="profilePhoto">
+        </div>
+
+        <div class="mb-3">
+            <label for="expRange" class="form-label">Experience (Years)</label>
+            <input type="range" class="form-range" id="expRange" min="0" max="10">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label d-block">Interests</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check1">
+                <label class="form-check-label" for="check1">Coding</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check2">
+                <label class="form-check-label" for="check2">Design</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="check3">
+                <label class="form-check-label" for="check3">Marketing</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label d-block">Choose Plan</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="planRadio" id="radioFree" checked>
+                <label class="form-check-label" for="radioFree">Free Plan</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="planRadio" id="radioPro">
+                <label class="form-check-label" for="radioPro">Pro Plan</label>
+            </div>
+        </div>
+
+        <div class="form-check form-switch mb-4">
+            <input class="form-check-input" type="checkbox" role="switch" id="switchNews">
+            <label class="form-check-label" for="switchNews">Subscribe to newsletter</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+</div>
+</body>
+</html>
